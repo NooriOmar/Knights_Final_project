@@ -21,7 +21,7 @@ public class CommonSteps extends SeleniumUtility {
     public void validateCPAbuttonIsClickable(String expectedCondition){
         boolean actualCondition = isElementEnabled(CommonPage.CPA_BUTTON);
 
-        if (expectedCondition.equalsIgnoreCase("enabled")) {
+        if (expectedCondition.equalsIgnoreCase("Enabled")) {
             Assert.assertTrue("Create Primary Account Button is enabled", actualCondition);
         } else if (expectedCondition.equalsIgnoreCase("disabled")) {
             Assert.assertFalse("Create Primary Account Button is disabled", actualCondition);
