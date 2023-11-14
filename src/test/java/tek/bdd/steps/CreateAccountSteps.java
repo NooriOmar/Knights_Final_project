@@ -17,8 +17,6 @@ public class CreateAccountSteps extends SeleniumUtility {
         Thread.sleep(100);
     }
 
-
-
     @And("the form title should be {string}")
     public void validateCPAformTitle(String expectedCPATitle){
         getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
